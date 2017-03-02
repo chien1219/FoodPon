@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XaDemo.View.MainPage"
+        
+             BackgroundColor="White">
+
+
+  <StackLayout Orientation = "Vertical">
+
+    <Image x:Name="CoverImage"
+				Source = "mainpage.png"
+           HorizontalOptions="FillAndExpand"
+			/>
+		
+
+		
+   	<Image x:Name="TimeImage"
+				Source = "time.png"
+				VerticalOptions="FillAndExpand"
+
+            HorizontalOptions="FillAndExpand"
+				BackgroundColor="White"
+           HeightRequest="50"/>
+					
+	 <StackLayout Orientation="Horizontal" HorizontalOptions = "FillAndExpand" HeightRequest = "125" VerticalOptions="FillAndExpand" BackgroundColor = "Red">
+           <Button Text=""
+			Image = "cutting.png"
+            TextColor="Black"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BorderColor="White"
+            FontAttributes="Bold"
+					WidthRequest = "75"
+            BackgroundColor = "Red"
+            x:Name="FindBtn"
+                />
+			 <Button Text=""
+			Image = "chat.png"
+            TextColor="Black"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+           
+            BorderColor="White"
+            FontAttributes="Bold"
+            BackgroundColor = "Yellow"
+					WidthRequest = "75"
+            BorderRadius="0"
+            x:Name="comment"
+                />
+					
+   </StackLayout>
+
+   <StackLayout Orientation="Horizontal"  HeightRequest = "110"  BackgroundColor = "Red">
+           <Button Text=""
+			Image = "scale.png"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BorderColor="White"
+            FontAttributes="Bold"
+            BackgroundColor = "Red"
+					WidthRequest = "75"
+            x:Name="scaleBtn"
+					
+                />
+			 <Button Text=""
+			Image = "board.png"
+            TextColor="Black"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BorderColor="White"
+            FontAttributes="Bold"
+            BackgroundColor = "Yellow"
+					WidthRequest = "75"
+            BorderRadius="0"
+            x:Name="board"
+                />
+		
+   </StackLayout>
+		
+
+  </StackLayout>
+
+</ContentPage>

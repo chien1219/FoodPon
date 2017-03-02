@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XaDemo.View.MainPage"
+        
+             BackgroundColor="#CECEFF">
+
+
+  <StackLayout>
+
+    <Image x:Name="CoverImage"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+           WidthRequest="300"
+           HeightRequest="300"/>
+		
+        <Image x:Name="TimeImage"
+				Source = "time.png"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+           WidthRequest="300"
+           HeightRequest="70"/>
+
+
+	 <StackLayout Orientation="Horizontal" HorizontalOptions = "FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor = "#CECEFF">
+           <Button Text=""
+			Image = "cutting.png"
+            TextColor="Black"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            FontSize="17"
+            BorderWidth="0"
+            BorderColor="White"
+            FontAttributes="Bold"
+            BackgroundColor = "#CECEFF"
+            BorderRadius="0"
+            x:Name="FindBtn"
+                />
+			 <Button Text=""
+			Image = "chat.png"
+            TextColor="Black"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            FontSize="17"
+            BorderWidth="0"
+            BorderColor="White"
+            FontAttributes="Bold"
+            BackgroundColor = "#CECEFF"
+            BorderRadius="0"
+            x:Name="comment"
+                />
+					
+   </StackLayout>
+
+
+  </StackLayout>
+
+</ContentPage>

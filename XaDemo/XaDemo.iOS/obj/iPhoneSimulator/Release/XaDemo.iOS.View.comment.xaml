@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XaDemo.comment">
+	<ContentPage.Content>
+
+	<StackLayout BackgroundColor = "Black">
+			<Label Text = "選擇店家" FontSize = "18" HorizontalOptions = "CenterAndExpand" VerticalOptions = "CenterAndExpand"/>
+
+
+        <Picker x:Name="res" HeightRequest = "45" >
+      
+    <Picker.Items>
+        <x:String>茗松屋</x:String>
+        <x:String>多多咖啡</x:String>
+		<x:String>金鑽自助餐</x:String>
+		<x:String>食尚屋拉麵丼飯</x:String>
+		<x:String>Morning House</x:String>	
+		<x:String>NOLA紐奧良小廚</x:String>
+    </Picker.Items>
+</Picker>
+      <Label Text = "選擇餐點" FontSize = "18" HorizontalOptions = "CenterAndExpand" VerticalOptions = "CenterAndExpand"/>
+      <Picker x:Name = "meal" HeightRequest = "45" >
+		 <Picker.Items>
+        <x:String>椒麻雞飯</x:String>
+        <x:String>烤腿</x:String>
+		<x:String>烤雞</x:String>
+		<x:String>雞肉蛋包飯</x:String>
+		<x:String>泰式雞肉飯</x:String>	
+    </Picker.Items>
+</Picker>
+			<Label Text = "用餐時間" FontSize = "18" HorizontalOptions = "CenterAndExpand" VerticalOptions = "CenterAndExpand"/>
+
+			<TimePicker x:Name = "timepicker" HeightRequest = "45" />
+
+			<Label Text = "您的大名" FontSize = "18" HorizontalOptions = "CenterAndExpand" VerticalOptions = "CenterAndExpand"/>
+			<Editor x:Name = "name" HeightRequest = "45"/>
+
+			
+			<StackLayout Orientation = "Horizontal" >
+
+			<Image Source = "editingcomments.png" HeightRequest = "30" WidthRequest = "30" />
+			<Label Text = "Write some comments!" FontSize = "18" HorizontalOptions = "CenterAndExpand" VerticalOptions = "CenterAndExpand"/>
+
+			</StackLayout>
+			
+			<Editor  x:Name = "comm" HeightRequest = "100" />
+	
+			<Button Text="確認"
+            TextColor="#EA25"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="EndAndExpand"
+            FontSize="13"
+            BorderWidth="0"
+            BorderColor="White"
+            FontAttributes="None"
+            BackgroundColor="White"
+            BorderRadius="20"
+            WidthRequest="200"
+            HeightRequest="35"
+            x:Name="confirm"
+                />
+
+			
+	</StackLayout>
+
+		
+	</ContentPage.Content>
+</ContentPage>

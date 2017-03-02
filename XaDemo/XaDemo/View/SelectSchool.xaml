@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XaDemo.SelectSchool">
+	<ContentPage.Content>
+
+		<StackLayout Orientation="Vertical"  Padding = "0,30,0,0">
+
+		<Image x:Name = "logo"
+				Source = "logo.png"
+				HeightRequest = "300"
+				WidthRequest = "300" Margin = "0,0,0,30"/>
+
+	<Image x:Name = "choose" Source = "chooseschool.png" HorizontalOptions = "CenterAndExpand" VerticalOptions = "CenterAndExpand" HeightRequest = "30" WidthRequest = "160" />
+
+
+        <Picker x:Name="school" HeightRequest = "50" TextColor = "White" HorizontalOptions = "CenterAndExpand" VerticalOptions = "CenterAndExpand" >
+      
+    <Picker.Items>
+        <x:String>NCTU</x:String>
+        <x:String>NTU</x:String>
+		<x:String>NTHU</x:String>
+		<x:String>NCKU</x:String>
+		<x:String>NCCU</x:String>	
+		<x:String>NDHU</x:String>
+    </Picker.Items>
+</Picker>
+
+		
+		<Button Text="確認"
+            TextColor="#EA25"
+            HorizontalOptions="CenterAndExpand"
+			VerticalOptions= "CenterAndExpand"
+            FontSize="13"
+            BorderWidth="3"
+            BorderColor="White"
+            FontAttributes="None"
+            BackgroundColor="White"
+            BorderRadius="20"
+            WidthRequest="200"
+            HeightRequest="35"
+            x:Name="confirmschool"
+                />
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

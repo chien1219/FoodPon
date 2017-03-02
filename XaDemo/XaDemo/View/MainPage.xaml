@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XaDemo.View.MainPage"
+        
+             BackgroundColor="White">
+
+
+  <StackLayout Orientation = "Vertical" Margin="0,0,0,0">
+
+    <Button x:Name="CoverImage"
+           HorizontalOptions="FillAndExpand"
+				VerticalOptions = "FillAndExpand"
+				HeightRequest = "250"
+				WidthRequest = "350"
+				BackgroundColor = "White"
+			/>
+		
+
+		
+   	<Image x:Name="TimeImage"
+				Source = "time.png"
+				VerticalOptions="FillAndExpand"
+
+            HorizontalOptions="FillAndExpand"
+				BackgroundColor="White"
+           HeightRequest="40"/>
+					
+	 <StackLayout Orientation="Horizontal" HorizontalOptions = "FillAndExpand" HeightRequest = "110" VerticalOptions="FillAndExpand" BackgroundColor = "Red" Margin="0,0,0,0">
+           <Button Text=""
+			Image = "cutting.png"
+            TextColor="Black"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BorderColor="White"
+            FontAttributes="Bold"
+					WidthRequest = "75"
+            BackgroundColor = "Red"
+            x:Name="FindBtn"
+                />
+			 <Button Text=""
+			Image = "chat.png"
+            TextColor="Black"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+           
+            BorderColor="White"
+            FontAttributes="Bold"
+            BackgroundColor = "Yellow"
+					WidthRequest = "75"
+            BorderRadius="0"
+            x:Name="comment"
+                />
+					
+   </StackLayout>
+
+		
+   <StackLayout Orientation="Horizontal"  HeightRequest = "100">
+
+
+			<Button 
+			Image = "adver.png"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BorderColor="White"
+            FontAttributes="Bold"
+            x:Name="adverBtn"	
+                />
+   
+		
+   </StackLayout>
+		
+
+  </StackLayout>
+
+</ContentPage>
